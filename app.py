@@ -43,7 +43,7 @@ def yest(): # Name of the method
 
 
 @app.route("/fetch/<symbol>")
-def fetchPrices():
+def fetchPrices(symbol):
 
   url=f'https://query2.finance.yahoo.com/v8/finance/chart/{symbol}?period1=1739494200&period2={int(time.time())}&interval=5m&includePrePost=true&events=div%7Csplit%7Cearn&&lang=en-US&region=US'
 

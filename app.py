@@ -7,7 +7,6 @@ import pandas as pd
 import time
 # import mysql.connector
 # from flask_cors import CORS
-import json
 # mysql = mysql.connector.connect(user='web', password='webPass',
 #   host='127.0.0.1',
 #   database='student')

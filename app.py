@@ -74,7 +74,7 @@ def fetchPrices(symbol):
   df.to_csv(f'{symbol}.csv')
 
   ret=app.response_class(
-      response=json.dumps(df),
+      response=df.to_json(),
       status=200,
       mimetype='application/json'
     )
